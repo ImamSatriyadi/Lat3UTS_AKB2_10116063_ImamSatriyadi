@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicVideoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_up"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite"
+        >
+        <ImageView
+            android:id="@+id/ic_music"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_music_78"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ic_music"
+            android:text="Music and Video Favourites"
+            android:textSize="18dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rel_up"
+        android:background="#f5f5f5"
+        />
+    <ScrollView
+        android:layout_below="@id/rel_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="55dp"
+        >
+
+    <RelativeLayout
+        android:layout_below="@id/rel_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/rel_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/style_border_f8"
+            >
+            <TextView
+                android:id="@+id/txt_title_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musik Favorit"
+                android:textSize="15dp"
+                />
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txt_title_desc"
+                android:layout_marginTop="8dp"
+                android:background="#cececf"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_music_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/style_border_f8"
+                android:layout_below="@id/view_1"
+                android:layout_marginTop="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/txt_judul_musik1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_marginTop="13dp"
+
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_play1"
+                    android:textColor="@color/colorWhite"
+                    android:text="PLAY"
+                    android:drawableLeft="@drawable/ic_play"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/style_button_telpon"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="STOP"
+                    android:id="@+id/btn_stop1"
+                    android:visibility="invisible"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_stop"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:background="@drawable/style_button_email"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_music_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/style_border_f8"
+                android:layout_below="@id/rel_music_1"
+                android:layout_marginTop="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/txt_judul_musik2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_marginTop="13dp"
+
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="PLAY"
+                    android:id="@+id/btn_play2"
+                    android:drawableLeft="@drawable/ic_play"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/style_button_telpon"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="STOP"
+                    android:id="@+id/btn_stop2"
+                    android:visibility="invisible"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_stop"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:background="@drawable/style_button_email"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/rel_music"
+            android:background="@drawable/style_border_f8"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/txt_title_desc_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Favorit"
+                android:textSize="15dp"
+                />
+            <View
+                android:id="@+id/view_10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txt_title_desc_video"
+                android:layout_marginTop="8dp"
+                android:background="#cececf"/>
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/view_10"
+                android:layout_marginTop="10dp"
+                android:id="@+id/video"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+</FrameLayout>

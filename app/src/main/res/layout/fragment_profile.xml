@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_up"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite"
+        >
+        <ImageView
+            android:id="@+id/ic_profil"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_user_78"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Profile"
+            android:layout_toRightOf="@id/ic_profil"
+            android:textSize="18dp"
+            android:fontFamily="@font/roboto_regular"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rel_up"
+        android:background="#f5f5f5"
+        />
+
+        <ScrollView
+            android:layout_below="@id/rel_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="55dp"
+            >
+
+                <RelativeLayout
+                    android:layout_below="@id/rel_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rel_cont_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/style_border_f8"
+                        >
+                        <TextView
+                            android:id="@+id/txt_biodata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biodata Imam :"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/roboto_regular"
+                            />
+                        <View
+                            android:id="@+id/view_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/txt_biodata"
+                            android:background="#cececf"
+                            android:layout_marginTop="8dp"
+                            />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_profil_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_below="@id/view_3"
+                            android:background="@drawable/style_border_f8"
+                            android:padding="10dp">
+                            <ImageView
+                                android:id="@+id/img_profil"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+
+                                />
+                            <TextView
+                                android:id="@+id/txt_nim_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:layout_marginTop="8dp"
+                                android:layout_toRightOf="@id/img_profil"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/roboto_regular"
+                                />
+                            <TextView
+                                android:id="@+id/txt_nama_profil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:layout_toRightOf="@id/img_profil"
+                                android:layout_below="@id/txt_nim_profile"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/roboto_regular"
+                                />
+                            <TextView
+                                android:id="@+id/txt_jurusan_profil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:layout_toRightOf="@id/img_profil"
+                                android:layout_below="@id/txt_nama_profil"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/roboto_regular"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_tempat_lahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@drawable/style_border_f8"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/rel_profil_2"
+                            >
+                            <TextView
+                                android:id="@+id/txt_title_tempat_lahir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tempat, Tanggal Lahir"
+                                android:textSize="15dp"
+                                />
+                            <View
+                                android:id="@+id/view_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@id/txt_title_tempat_lahir"
+                                android:layout_marginTop="8dp"
+                                android:background="#cececf"/>
+
+                            <TextView
+                                android:id="@+id/txt_tempat_lahir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/view_4"
+
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:textSize="13dp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/rel_desc_profil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@drawable/style_border_f8"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/rel_tempat_lahir"
+                            >
+                            <TextView
+                                android:id="@+id/txt_title_desc_profil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tentang Imam :"
+                                android:textSize="15dp"
+                                />
+                            <View
+                                android:id="@+id/view_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@id/txt_title_desc_profil"
+                                android:layout_marginTop="8dp"
+                                android:background="#cececf"/>
+                            <TextView
+                                android:id="@+id/txt_content_desc_profil"
+                                android:layout_below="@id/view_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text=""
+                                android:textSize="13dp"
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/style_border_f8"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/rel_cont_up"
+                        >
+                        <TextView
+                            android:id="@+id/txt_title_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hubungi Imam :"
+                            android:textSize="15dp"
+                            />
+                        <View
+                            android:id="@+id/view_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/txt_title_contact"
+                            android:layout_marginTop="8dp"
+                            android:background="#cececf"/>
+
+                        <Button
+                            android:id="@+id/btn_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_5"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/ic_mail"
+                            android:paddingLeft="30dp"
+                            android:background="@drawable/style_button_email"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_telpon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_5"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:drawableLeft="@drawable/ic_phone"
+                            android:paddingLeft="30dp"
+                            android:background="@drawable/style_button_telpon"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btn_sosmed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_5"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:drawableLeft="@drawable/ic_fb"
+                            android:paddingLeft="30dp"
+                            android:background="@drawable/style_button_fb"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_find_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/style_border_f8"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/rel_contact"
+                        >
+                        <TextView
+                            android:id="@+id/txt_title_find_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Temukan Imam : "
+                            android:textSize="15dp"
+                            />
+                        <View
+                            android:id="@+id/view_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/txt_title_find_me"
+                            android:layout_marginTop="8dp"
+                            android:background="#cececf"/>
+
+                        <WebView
+                            android:id="@+id/webview"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:layout_below="@id/view_7"
+                            android:layout_marginTop="8dp"
+                            tools:ignore="WebViewLayout">
+
+                        </WebView>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/webview"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/style_button_telpon"
+                            android:text="LIHAT DETAIL"
+                            android:id="@+id/btn_maps"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_about_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/style_border_f8"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/rel_find_me"
+                        >
+                        <TextView
+                            android:id="@+id/txt_title_about_app"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tentang Aplikasi : "
+                            android:textSize="15dp"
+                            />
+                        <View
+                            android:id="@+id/view_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/txt_title_about_app"
+                            android:layout_marginTop="8dp"
+                            android:background="#cececf"/>
+
+                        <Button
+                            android:id="@+id/btn_dialog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tentang Aplikasi"
+                            android:layout_below="@id/view_8"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/style_button_telpon"
+                            android:textColor="@color/colorWhite"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

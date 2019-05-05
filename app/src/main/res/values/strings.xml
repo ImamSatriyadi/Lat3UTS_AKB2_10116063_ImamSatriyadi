@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">IMAM Apps</string>
+    <string name="splash_title_apps">Apps</string>
+    <string name="splash_title_name">Imam</string>
+    <string name="splash_ver">App version 1.0</string>
+    <string name="walkthrough_title_1">PROFIL</string>
+    <string name="walkthrough_desc_1">Kamu bisa liat profil lengkap Imam seperti biodata, tempat tinggal, dan kontak yang bisa dihubungi jika ingin lebih dekat dengan Imam :)</string>
+    <string name="walkthrough_title_2">GALERI</string>
+    <string name="walkthrough_desc_2">Kamu bisa liat foto-foto yang tentang Imam, mulai dari foto waktu zaman SMK sampai Kuliah :)</string>
+    <string name="walkthrough_title_3">MUSIK dan VIDEO</string>
+    <string name="walkthrough_desc_3">Kamu bisa tau musik dan video kesukaan Imam, kamu juga bisa langsung memutar musik dan video tersebut :) </string>
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="start">MULAI</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="profil"><u>Profil</u> </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--  String Navigasi  -->
+    <string name="title_home">Home</string>
+    <string name="title_daily">Daily Activity</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_music_video">Music And Video</string>
+    <string name="title_profil">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
